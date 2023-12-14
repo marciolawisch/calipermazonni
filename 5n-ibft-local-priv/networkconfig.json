@@ -1,0 +1,59 @@
+{
+  "caliper": {
+    "blockchain": "quorum",
+    "command": {
+      //"start": "docker-compose -f ./config/docker-compose.yml up -d && sleep 80s",
+      //"end": "docker-compose -f ./config/docker-compose.yml down"
+    }
+  },
+  "quorum": {
+    "nodes": [
+      {
+        "url": "10.20.20.63:20000",
+        "fromAddress": "0x64bf6807fc6999ae4d82893b9df79f8c4caff214",
+        "fromAddressPassword": "123456",
+        "privateFrom": "ZtZaAuLMTRoNAScSnPa93kAryugrLCDiax0LxPNInxg="
+      },
+      {
+        "url": "10.20.20.52:20000",
+        "fromAddress": "0xef4b3b76cc0bd2dfd122234203b3318cd825c06a",
+        "fromAddressPassword": "123456",
+        "privateFrom": "THNJyPL+ZkkB9hQlYtuPcVCYnLkbdpanTtFcmNYk1jE="
+      },
+      {
+        "url": "10.20.20.89:20000",
+        "fromAddress": "0x480465c2dbf5bdeadfcc8cb65e660df800980c9c",
+        "fromAddressPassword": "123456",
+        "privateFrom": "eWMaCNZqjtQOPMNopqTB8XDkMYVxABtic5jH5CKsLBA="
+      },
+      {
+        "url": "10.20.20.84:20000",
+        "fromAddress": "0x7a283f5988e5d262738fdf4388a9a1e05fe757af",
+        "fromAddressPassword": "123456",
+        "privateFrom": "FQ+ll3Zwbq4e07aH0sxGpZnF6XzSVm8ma8cAdXWMbD4="
+      },
+      {
+        "url": "10.20.20.53:20000",
+        "fromAddress": "0x966fb0b79e5bfe3b57dca9965a1cbe17b18514ab",
+        "fromAddressPassword": "123456",
+        "privateFrom": "7/JQ8ZvM9BrvgMD8oerf6EHbLbtWvpnFzjufuXSi4C4"
+      }
+    ],
+    "contractDeployerAddress": "",
+    "contractDeployerAddressPassword": "123456",
+    "transactionConfirmationBlocks": 2,
+    "contracts": {
+      "simple": {
+        "path": "./simple/simple.json",
+        "isPrivate": true,
+        "privateFor": [
+          "ZtZaAuLMTRoNAScSnPa93kAryugrLCDiax0LxPNInxg=",
+          "THNJyPL+ZkkB9hQlYtuPcVCYnLkbdpanTtFcmNYk1jE=",
+          "eWMaCNZqjtQOPMNopqTB8XDkMYVxABtic5jH5CKsLBA=",
+          "FQ+ll3Zwbq4e07aH0sxGpZnF6XzSVm8ma8cAdXWMbD4=",
+          "7/JQ8ZvM9BrvgMD8oerf6EHbLbtWvpnFzjufuXSi4C4"
+        ]
+      }
+    }
+  }
+}
